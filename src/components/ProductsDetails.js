@@ -10,16 +10,26 @@ export default function ProductsDetails() {
     const dispatch = useDispatch();
 
     const fetchProductsDetails = async () => {
-        const response = await axios.get(`https://fakestoreapi.com/products/${productId}`)
+        const response = await axios
+            .get(`https://fakestoreapi.com/products/${productId}`)
             .catch(error => {
                 console.log('Error', error);
             });
-        dispatch(selectedProducts(response.data))
+
+        dispatch(selectedProducts(response.data));
     };
+
+    useEffect(() => {
+        if (productId && product !== "") fetchProductsDetails();
+    }, [productId]);
 
     return (
         <div>
-            <h1>Products Details</h1>
+            {Object.keys(product).length === 0 ? (
+                <div>... Loading</div>
+            ) : (
+                <div></div>
+            )}
         </div>
     );
 };

@@ -14,11 +14,9 @@ export const selectedProducts = (products) => {
     };
 };
 
-/*
-export const removeSelectedProducts = (products) => {
+export const removeSelectedProducts = () => {
     return {
         type: REMOVE_SELECTED_PRODUCTS,
-        payload: products
     };
 };
-*/
+

@@ -5,8 +5,9 @@ import { useParams } from 'react-router-dom';
 import { selectedProducts } from '../redux/actions/actions';
 
 export default function ProductsDetails() {
-    const { productId } = useParams();
     const product = useSelector(state => state.product);
+    const { image, title, price, category, description } = product;
+    const { productId } = useParams();
     const dispatch = useDispatch();
 
     const fetchProductsDetails = async () => {
@@ -15,7 +16,6 @@ export default function ProductsDetails() {
             .catch(error => {
                 console.log('Error', error);
             });
-
         dispatch(selectedProducts(response.data));
     };
 
@@ -28,7 +28,30 @@ export default function ProductsDetails() {
             {Object.keys(product).length === 0 ? (
                 <div>... Loading</div>
             ) : (
-                <div></div>
+                <div>
+                    <div>
+                        <div>And</div>
+                        <div>
+                            <div>
+                                <img src={image}></img>
+                            </div>
+                            <div>
+                                <h1>{title}</h1>
+                                <h2>
+                                    <a>{price}</a>
+                                </h2>
+                                <h3>{category}</h3>
+                                <p>{description}</p>
+                                <div>
+                                    <div>
+                                        <i></i>
+                                    </div>
+                                    <div>Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     );

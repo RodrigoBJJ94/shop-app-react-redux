@@ -2,10 +2,9 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/store/store';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import ProductsList from './components/ProductsList';
-import Products from './components/Products';
-import ProductsDetails from './components/ProductsDetails';
+import Header from './components/Header/Header';
+import ProductsList from './components/ProductsList/ProductsList';
+import ProductsDetails from './components/ProductsDetails/ProductsDetails';
 
 export default function App() {
   return (
@@ -13,8 +12,12 @@ export default function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" exact element={<ProductsList />} />
-          <Route path="/product/:productId" exact element={<ProductsDetails />} />
+          <Route
+            path="/"
+            exact element={<ProductsList />} />
+          <Route
+            path="/product/:productId"
+            exact element={<ProductsDetails />} />
           <Route>404 Page Not Found!</Route>
         </Routes>
       </Router>

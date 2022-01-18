@@ -25,5 +25,5 @@ export default function Products() {
         )
     })
 
-    return <>{list}</>
+    return <> {list} </>
 };

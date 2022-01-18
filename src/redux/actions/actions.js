@@ -19,4 +19,3 @@ export const removeSelectedProducts = () => {
         type: REMOVE_SELECTED_PRODUCTS,
     };
 };
-

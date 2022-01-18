@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
-import { setProducts } from '../redux/actions/actions';
-import Products from './Products';
+import { setProducts } from '../../redux/actions/actions';
+import Products from '../Products/Products';
 
 export default function ProductsList() {
     const products = useSelector(state => state);

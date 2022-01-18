@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import ProductsList from './components/ProductsList/ProductsList';
 import ProductsDetails from './components/ProductsDetails/ProductsDetails';
+import './Styles.css';
 
 export default function App() {
   return (

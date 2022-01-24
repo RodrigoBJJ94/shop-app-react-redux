@@ -11,7 +11,7 @@ export default function Products() {
         return (
             <div key={id} className='main'>
                 <Link to={`/product/${id}`}>
-                    <div>
+              
                         <div className='cards'>
                             <div>
                                 <img src={image} className='images' />
@@ -22,7 +22,7 @@ export default function Products() {
                                 <div>{category}</div>
                             </div>
                         </div>
-                    </div>
+                  
                 </Link>
             </div>
         )

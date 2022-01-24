@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { selectedProducts, removeSelectedProducts } from '../../redux/actions/actions';
+import './Styles.css';
 
 export default function ProductsDetails() {
     const product = useSelector(state => state.product);
@@ -27,7 +28,7 @@ export default function ProductsDetails() {
     }, [productId]);
 
     return (
-        <div>
+        <div className='details-main'>
             {Object.keys(product).length === 0 ? (
                 <div>... Loading</div>
             ) : (
@@ -35,7 +36,7 @@ export default function ProductsDetails() {
                     <div>
                         <div>
                             <div>
-                                <img src={image}></img>
+                                <img src={image} className='image' />
                             </div>
                             <div>
                                 <h1>{title}</h1>

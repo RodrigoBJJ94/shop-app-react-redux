@@ -1,0 +1,9 @@
+.image {
+    width: 300px;
+    max-width: 100%;
+}
+
+.details-main {
+  margin-left: 20px;
+  margin-top: 30px;
+}

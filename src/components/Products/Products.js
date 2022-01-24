@@ -12,7 +12,7 @@ export default function Products() {
             <div key={id} className='main'>
                 <Link to={`/product/${id}`}>
                     <div>
-                        <div>
+                        <div className='cards'>
                             <div>
                                 <img src={image} className='images' />
                             </div>

@@ -1,7 +1,10 @@
 .main {
     display: flex;
-    justify-content: center;
-    width: 640px;
+    flex-direction: column;
+}
+
+.cards {
+    background-color: tomato;
 }
 
 .images {

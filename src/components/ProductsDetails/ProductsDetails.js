@@ -33,7 +33,6 @@ export default function ProductsDetails() {
             ) : (
                 <div>
                     <div>
-                        <div>And</div>
                         <div>
                             <div>
                                 <img src={image}></img>

@@ -2,20 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #000;
 }
 
 .cards {
-    border: 1px solid #555;
-    margin: 5px;
+    margin-top: 1px;
+    margin-bottom: 5px;
     padding: 10px;
     display: flex;
     border-radius: 5px;
     align-items: center;
-    justify-content: center;
     background-color: #fff;
     width: 640px;
 }
 
 .images {
-    width: 100px;
+    width: 150px;
+    max-width: 100%;
+}
+
+.infos {
+    color: #000;
+    margin-left: 20px;
 }

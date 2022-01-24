@@ -11,18 +11,16 @@ export default function Products() {
         return (
             <div key={id} className='main'>
                 <Link to={`/product/${id}`}>
-              
                         <div className='cards'>
                             <div>
                                 <img src={image} className='images' />
                             </div>
-                            <div>
-                                <div>{title}</div>
-                                <div>{price}</div>
-                                <div>{category}</div>
+                            <div className='info'>
+                                <h3 className='infos'>{title}</h3>
+                                <h3 className='infos'>{price}</h3>
+                                <h3 className='infos'>{category}</h3>
                             </div>
                         </div>
-                  
                 </Link>
             </div>
         )

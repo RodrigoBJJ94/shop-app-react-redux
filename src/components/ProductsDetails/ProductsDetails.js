@@ -35,10 +35,10 @@ export default function ProductsDetails() {
                 <div>
                     <img src={image} className='image' />
                     <div>
-                        <h1>{title}</h1>
+                        <h1 className='product-title'>{title}</h1>
                         <h2><a>{price}</a></h2>
                         <h3>{category}</h3>
-                        <p>{description}</p>
+                        <p className='product-description'>{description}</p>
                     </div>
                 </div>
             )}

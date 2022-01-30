@@ -30,29 +30,15 @@ export default function ProductsDetails() {
     return (
         <div className='details-main'>
             {Object.keys(product).length === 0 ? (
-                <div>... Loading</div>
+                <h3 className='loading'>Loading...</h3>
             ) : (
                 <div>
+                    <img src={image} className='image' />
                     <div>
-                        <div>
-                            <div>
-                                <img src={image} className='image' />
-                            </div>
-                            <div>
-                                <h1>{title}</h1>
-                                <h2>
-                                    <a>{price}</a>
-                                </h2>
-                                <h3>{category}</h3>
-                                <p>{description}</p>
-                                <div>
-                                    <div>
-                                        <i></i>
-                                    </div>
-                                    <div>Add to Cart</div>
-                                </div>
-                            </div>
-                        </div>
+                        <h1>{title}</h1>
+                        <h2><a>{price}</a></h2>
+                        <h3>{category}</h3>
+                        <p>{description}</p>
                     </div>
                 </div>
             )}

@@ -1,11 +1,15 @@
 .image {
     width: 300px;
     max-width: 100%;
+    margin-left: 100px;
+    margin-bottom: 40px;
 }
 
 .details-main {
-  margin-left: 20px;
-  margin-top: 30px;
+  width: 640px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
 }
 
 .loading {
